@@ -1,10 +1,10 @@
 package dasuki.goblinite.item;
 
 import dasuki.goblinite.Goblinite;
+import dasuki.goblinite.item.custom.ModScytheItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -13,10 +13,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item GOBLINITE_SCYTHE = registerItem("goblinite_scythe",
-            new Item(new FabricItemSettings().group(ItemGroup.COMBAT)));
-
-    //public static final SwordItem GOBLINITE_SCYTHE = (SwordItem) registerItem("goblinite_scythe",
-            //new SwordItem(null, 8, 2, new FabricItemSettings().group(ItemGroup.COMBAT)));
+            new ModScytheItem(ModToolMaterials.GOBLINITE, 4, -2f,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Goblinite.MOD_ID, name), item);
