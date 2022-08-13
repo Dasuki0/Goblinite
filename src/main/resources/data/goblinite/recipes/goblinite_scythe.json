@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "goblinite:goblinite_shard"
+      }
+    },
+    "pattern": [
+      "XXX",
+      " #X",
+      "#  "
+    ],
+    "result": {
+      "item": "goblinite:goblinite_scythe"
+    }
+  }
