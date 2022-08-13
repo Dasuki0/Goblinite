@@ -1,6 +1,8 @@
 package dasuki.goblinite;
 
 import dasuki.goblinite.block.ModBlocks;
+import dasuki.goblinite.effects.ModEffects;
+import dasuki.goblinite.enchantment.ModEnchantments;
 import dasuki.goblinite.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -11,10 +13,13 @@ public class Goblinite implements ModInitializer {
 	public static final String MOD_ID = "goblinite";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-
-	@Override
+    @Override
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModEffects.registerModEffects();
+		ModEnchantments.registerModEnchantments();
+		
 	}
 }
