@@ -76,6 +76,16 @@ public class LifestealEnchantment extends Enchantment {
     }
 
     @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return false;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return false;
+    }
+
+    @Override
     protected boolean canAccept(Enchantment other) {
         return super.canAccept(other);
     }
