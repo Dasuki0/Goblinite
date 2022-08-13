@@ -2,6 +2,8 @@
   "item.goblinite.goblinite_shard": "Goblinite Shard",
   "item.goblinite.goblinite_scythe": "Goblinite Scythe",
 
+  "block.goblinite.goblinite_block": "Goblinite Block",
 
-  "block.goblinite.goblinite_block": "Goblinite Block"
+  "effect.goblinite.lifesteal_cooldown": "Life Steal Cooldown",
+  "enchantment.goblinite.lifesteal": "Life Steal"
 }
