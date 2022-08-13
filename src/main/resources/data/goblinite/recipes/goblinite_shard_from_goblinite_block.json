@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "goblinite_shard",
+  "ingredients": [
+    {
+      "item": "goblinite:goblinite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "goblinite:goblinite_shard"
+  }
+}
