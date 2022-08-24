@@ -4,10 +4,12 @@ import dasuki.goblinite.block.ModBlocks;
 import dasuki.goblinite.effects.ModEffects;
 import dasuki.goblinite.enchantment.ModEnchantments;
 import dasuki.goblinite.item.ModItems;
+import dasuki.goblinite.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib3.GeckoLib;
 
 public class Goblinite implements ModInitializer {
 	public static final String MOD_ID = "goblinite";
@@ -18,8 +20,12 @@ public class Goblinite implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		ModRegistries.registerModStuffs();
+
 		ModEffects.registerModEffects();
 		ModEnchantments.registerModEnchantments();
+
+		GeckoLib.initialize();
 		
 	}
 }

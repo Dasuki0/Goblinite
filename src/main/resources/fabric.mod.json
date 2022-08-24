@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "dasuki.goblinite.Goblinite"
+    ],
+    "client": [
+      "dasuki.goblinite.GobliniteClient"
     ]
   },
   "mixins": [
