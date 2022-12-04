@@ -63,8 +63,8 @@ public class LifestealEnchantment extends Enchantment {
                     }
                 }
             }
-            user.heal(counter + (level));
-            user.addStatusEffect(new StatusEffectInstance(ModEffects.LIFESTEAL_COOLDOWN_EFFECT, 300 - (level * 20)));
+            user.heal(counter + (level) + 1f);
+            user.addStatusEffect(new StatusEffectInstance(ModEffects.LIFESTEAL_COOLDOWN_EFFECT, 100 - (level * 20)));
             if(user.world instanceof ServerWorld)
                 ((ServerWorld) user.world).spawnParticles(ParticleTypes.HEART, user.getX(), user.getBodyY(0.5D), user.getZ(), 3, 0.4, 0.5, 0.4, 0.0D);
         }
