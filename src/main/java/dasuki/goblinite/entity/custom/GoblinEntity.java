@@ -19,7 +19,7 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class GoblinEntity extends HostileEntity implements IAnimatable {
-    private final AnimationFactory factory = new AnimationFactory(this);
+    private AnimationFactory factory = new AnimationFactory(this);
 
     public GoblinEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
@@ -37,8 +37,6 @@ public class GoblinEntity extends HostileEntity implements IAnimatable {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0));
         this.goalSelector.add(8, new LookAroundGoal(this));
-        this.goalSelector.add(9, new LookAtEntityGoal(this, PlayerEntity.class, 15.0f, 1.0f));
-        this.goalSelector.add(10, new LookAtEntityGoal(this, MobEntity.class, 15.0f));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.goalSelector.add(4, new MeleeAttackGoal(this, 1.0, false));
     }
