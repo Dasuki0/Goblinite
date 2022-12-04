@@ -4,6 +4,8 @@
 
   "item.goblinite.goblin_spawn_egg": "Goblin Spawn Egg",
 
+  "entity.goblinite.goblin": "Goblin",
+
   "block.goblinite.goblinite_block": "Goblinite Block",
 
   "effect.goblinite.lifesteal_cooldown": "Life Steal Cooldown",
